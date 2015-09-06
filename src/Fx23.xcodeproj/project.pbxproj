@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A51A844192360EC007EA9F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A51A843192360EC007EA9F5 /* Foundation.framework */; };
+		5A51A847192360EC007EA9F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A51A846192360EC007EA9F5 /* main.m */; };
+		5A51A85419236125007EA9F5 /* Fx23Reader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A51A85319236125007EA9F5 /* Fx23Reader.m */; };
+		5A51A85D192375CF007EA9F5 /* Fx23Reader+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A51A85C192375CF007EA9F5 /* Fx23Reader+Extension.m */; };
+		5A51A86319238E13007EA9F5 /* Fx23StringReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A51A86219238E13007EA9F5 /* Fx23StringReader.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5A51A83E192360EC007EA9F5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5A51A840192360EC007EA9F5 /* Fx23 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Fx23; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A51A843192360EC007EA9F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5A51A846192360EC007EA9F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5A51A849192360EC007EA9F5 /* Fx23-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fx23-Prefix.pch"; sourceTree = "<group>"; };
+		5A51A85219236125007EA9F5 /* Fx23Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fx23Reader.h; sourceTree = "<group>"; };
+		5A51A85319236125007EA9F5 /* Fx23Reader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fx23Reader.m; sourceTree = "<group>"; };
+		5A51A85B192375CF007EA9F5 /* Fx23Reader+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Fx23Reader+Extension.h"; sourceTree = "<group>"; };
+		5A51A85C192375CF007EA9F5 /* Fx23Reader+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Fx23Reader+Extension.m"; sourceTree = "<group>"; };
+		5A51A86119238E13007EA9F5 /* Fx23StringReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fx23StringReader.h; sourceTree = "<group>"; };
+		5A51A86219238E13007EA9F5 /* Fx23StringReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fx23StringReader.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A51A83D192360EC007EA9F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A51A844192360EC007EA9F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A51A837192360EC007EA9F5 = {
+			isa = PBXGroup;
+			children = (
+				5A51A845192360EC007EA9F5 /* Fx23 */,
+				5A51A842192360EC007EA9F5 /* Frameworks */,
+				5A51A841192360EC007EA9F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A51A841192360EC007EA9F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A51A840192360EC007EA9F5 /* Fx23 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A51A842192360EC007EA9F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A51A843192360EC007EA9F5 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A51A845192360EC007EA9F5 /* Fx23 */ = {
+			isa = PBXGroup;
+			children = (
+				5A51A851192360FB007EA9F5 /* Fx23 */,
+				5A51A846192360EC007EA9F5 /* main.m */,
+				5A51A848192360EC007EA9F5 /* Supporting Files */,
+			);
+			path = Fx23;
+			sourceTree = "<group>";
+		};
+		5A51A848192360EC007EA9F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A51A849192360EC007EA9F5 /* Fx23-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A51A851192360FB007EA9F5 /* Fx23 */ = {
+			isa = PBXGroup;
+			children = (
+				5A51A85219236125007EA9F5 /* Fx23Reader.h */,
+				5A51A85319236125007EA9F5 /* Fx23Reader.m */,
+				5A51A85B192375CF007EA9F5 /* Fx23Reader+Extension.h */,
+				5A51A85C192375CF007EA9F5 /* Fx23Reader+Extension.m */,
+				5A51A86119238E13007EA9F5 /* Fx23StringReader.h */,
+				5A51A86219238E13007EA9F5 /* Fx23StringReader.m */,
+			);
+			path = Fx23;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A51A83F192360EC007EA9F5 /* Fx23 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A51A84E192360EC007EA9F5 /* Build configuration list for PBXNativeTarget "Fx23" */;
+			buildPhases = (
+				5A51A83C192360EC007EA9F5 /* Sources */,
+				5A51A83D192360EC007EA9F5 /* Frameworks */,
+				5A51A83E192360EC007EA9F5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fx23;
+			productName = Fx23;
+			productReference = 5A51A840192360EC007EA9F5 /* Fx23 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A51A838192360EC007EA9F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Mgen;
+			};
+			buildConfigurationList = 5A51A83B192360EC007EA9F5 /* Build configuration list for PBXProject "Fx23" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5A51A837192360EC007EA9F5;
+			productRefGroup = 5A51A841192360EC007EA9F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A51A83F192360EC007EA9F5 /* Fx23 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A51A83C192360EC007EA9F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A51A847192360EC007EA9F5 /* main.m in Sources */,
+				5A51A85D192375CF007EA9F5 /* Fx23Reader+Extension.m in Sources */,
+				5A51A86319238E13007EA9F5 /* Fx23StringReader.m in Sources */,
+				5A51A85419236125007EA9F5 /* Fx23Reader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5A51A84C192360EC007EA9F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5A51A84D192360EC007EA9F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5A51A84F192360EC007EA9F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fx23/Fx23-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5A51A850192360EC007EA9F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fx23/Fx23-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A51A83B192360EC007EA9F5 /* Build configuration list for PBXProject "Fx23" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A51A84C192360EC007EA9F5 /* Debug */,
+				5A51A84D192360EC007EA9F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A51A84E192360EC007EA9F5 /* Build configuration list for PBXNativeTarget "Fx23" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A51A84F192360EC007EA9F5 /* Debug */,
+				5A51A850192360EC007EA9F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A51A838192360EC007EA9F5 /* Project object */;
+}
