@@ -1,6 +1,41 @@
 # Fx23
 Text scanner, available in [Node.js](https://github.com/mgenware/fx23-node), [C#](https://github.com/mgenware/fx23-csharp) and [Objective-C](https://github.com/mgenware/fx23-objc).
 
+# API
+## Fx23Reader Class
+Base scanner class.
+### Properties
+* `collectLineInfo` counts lineIndex and columnIndex during each read operation, default NO.
+* `index` the index position of current character.
+* `columnIndex` zero-based column number of current character at current line.
+* `lineIndex` zero-based line number of current character.
+* `visibleIndex` the index position of current character without newline characters.
+* `length` total length of the string.
+
+### Methods
+* `hasNext` returns NO if no more character to read.
+* `peek` returns the next character without moving the internal index.
+* `next` returns the next character and move the internal index forward.
+* `mark` marks a flag at current position.
+* `collect` returns a sub-string from last marked position to current position.
+* `nextOverride` implementated by subclass.
+* `peekOverride` implementated by subclass.
+
+## Fx23StringReader Class
+A concret class derived from Fx23Reader, use this to create a scanner from a string.
+
+### Methods
+* `initWithString`, `readerWithString` initializes a Fx23Reader from an `NSString`.
+
+## Fx23Reader (Extension)
+This class adds some useful extension methods to Fx23Reader.
+### Methods
+* `collectWhile` moves forward while condition is true, and returns the string scanned.
+* `skipWhile` moves forward while condition is true.
+* `moveToContent` moves to next non-whitespace character.
+* `skipLine` moves to next line.
+* `collectLine` moves to next line and returns current line.
+
 # Example
 ```objective-c
 // the string we need to scan
@@ -163,42 +198,6 @@ void printInfo(Fx23StringReader *reader) {
           reader.index);
 }
 ```
-
-# API
-## Fx23Reader Class
-Base scanner class.
-### Properties
-* `collectLineInfo` counts lineIndex and columnIndex during each read operation, default NO.
-* `index` the index position of current character.
-* `columnIndex` zero-based column number of current character at current line.
-* `lineIndex` zero-based line number of current character.
-* `visibleIndex` the index position of current character without newline characters.
-* `length` total length of the string.
-
-### Methods
-* `hasNext` returns NO if no more character to read.
-* `peek` returns the next character without moving the internal index.
-* `next` returns the next character and move the internal index forward.
-* `mark` marks a flag at current position.
-* `collect` returns a sub-string from last marked position to current position.
-* `nextOverride` implementated by subclass.
-* `peekOverride` implementated by subclass.
-
-## Fx23StringReader Class
-A concret class derived from Fx23Reader, use this to create a scanner from a string.
-
-### Methods
-* `initWithString`, `readerWithString` initializes a Fx23Reader from an `NSString`.
-
-## Fx23Reader (Extension)
-This class adds some useful extension methods to Fx23Reader.
-### Methods
-* `collectWhile` moves forward while condition is true, and returns the string scanned.
-* `skipWhile` moves forward while condition is true.
-* `moveToContent` moves to next non-whitespace character.
-* `skipLine` moves to next line.
-* `collectLine` moves to next line and returns current line.
-
 
 # License
 [MIT](LICENSE)
